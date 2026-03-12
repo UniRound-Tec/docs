@@ -22,17 +22,16 @@ title: "🍊 概览"
 
 很难靠一张图讲清楚，Aurogen的架构\
 简单来说，Aurogen在OpenClaw的Agent的核心框架下，将\
-providers、agents、channels、skills等等核心概念，**完全解耦**
+providers、agents、channels、skills等等核心概念，**完全解耦。**
 
-这意味着，你可以**自由编排组合，**这听起来或许有些云里雾里。简单来说：\
-你可以在该架构下配置多个类OpenClaw智能体，每个智能体**有独立的工作空间**，你也可以为每个智能体设置不同的Skills、人设（SOUL.md）、它们也都有自己**独立的记忆。**当然，这些都不需要你操心，你只管创建即可。
+这意味着，你可以**自由编排组合，这听起来或许有些云里雾里。简单来说：你可以在该架构下配置多个类OpenClaw智能体，每个智能体有独立的工作空间**，你也可以为每个智能体设置不同的Skills、人设（SOUL.md）、它们也都有自己**独立的记忆**。当然，这些都不需要你操心，你只管创建即可。
 
 还有当前已经实现的一些小的特性：
 
 - **完全兼容ClawHub**：除了Agent本身自带ClawHub之外，有skills管理面板，可以将在ClawHub上下载的skill压缩包直接传入系统，可以根据Agent_Name分类管理。
-- **更优雅的上下文和记忆机制：**省Tokens。
-- **一键启动：**嵌入式Python和Node，一键启动不污染环境。
-- **较为轻量级：**python+vite（静态构建）可以在2h2g的linux开发板中运行。
+- **更优雅的上下文和记忆机制**：省Tokens。
+- **一键启动**：嵌入式Python和Node，一键启动不污染环境。
+- **较为轻量级**：python+vite（静态构建）可以在2h2g的linux开发板中运行。
 
 <Note>
   Pico/Zero Claw/NanoBot也是优秀的软件，推荐尝试，我们在一些工具的实现上参考了NanoBot
