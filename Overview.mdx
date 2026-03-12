@@ -2,4 +2,41 @@
 title: "Overview"
 ---
 
-Coming soon ...
+Download, install, and launch in one step. Give it a try.
+
+## What is Aurogen:>?
+
+> The open-source community already has many OpenClaw alternatives. Some rewrite the entire system in faster languages, and some make deployment easier, but many also reduce features or make secondary development harder for newer developers. As heavy AI users, we tried most of these alternatives and rebuilt an OpenClaw-like system from scratch around more practical pain points and real-world needs.
+
+**Fully modular**. Aurogen turns concepts such as **agents, channels, providers, and skills** into fully modular, instantiable, and parallel components that you can combine however you want. In practice, you can deploy once and run many "lobsters" at the same time. That is what _More OpenClaws_ means.
+
+**Easy to configure**. Aurogen removes CLI setup and static config files. After installation, open the web UI, set a password, configure your first provider, and start using the Web channel. Because every module loads dynamically, your settings apply immediately with **no restart required**.
+
+**Compatible with the ecosystem**. Aurogen is fully compatible with the OpenClaw ecosystem. You can download any skills from [<u>clawhub.ai</u>](http://clawhub.ai) and import them into Aurogen. The built-in public skills also include ClaWHub integration.
+
+## Architecture
+
+<Frame>
+  ![Image](/images/image.png)
+</Frame>
+
+It is hard to explain the whole architecture with a single diagram.
+
+In short, Aurogen keeps the core OpenClaw agent model while fully decoupling providers, agents, channels, skills, and the other key concepts.
+
+That means you can mix and match components freely. In practice, you can configure multiple OpenClaw-like agents in the same system, give each one an isolated workspace, and assign different skills, personalities (`SOUL.md`), and memories to each agent. You do not need to manage the complexity manually. You only need to create the agent you want.
+
+Here are a few additional features that are already available:
+
+- **Full ClawHub compatibility**: Besides built-in ClawHub support, Aurogen includes a skills management panel. You can upload skill archives downloaded from ClawHub directly into the system and organize them by agent name.
+- **Better context and memory handling**: It saves tokens.
+- **One-click startup**: It bundles Python and Node.js so you can launch it without polluting your environment.
+- **Lightweight deployment**: The Python backend plus the Vite-built frontend can run on a Linux dev board with 2 CPU cores and 2 GB of RAM.
+
+<Note>
+  Pico, Zero Claw, and NanoBot are also excellent projects and worth trying. Some tool implementations in Aurogen were inspired by NanoBot.
+</Note>
+
+<Warning>
+  Some new features are still in progress.
+</Warning>

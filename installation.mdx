@@ -1,0 +1,82 @@
+---
+title: "Installation"
+---
+
+You can install Aurogen in three ways.
+
+### 1. One-click package (recommended)
+
+Go to [<u>Releases</u>](https://github.com/UniRound-Tec/Aurogen/releases) and download the package for your platform. It includes Python and Node.js runtimes, so you do not need to install anything else.
+
+| **Platform** | **Architecture**              | **File**                            |
+| :----------- | :---------------------------- | :---------------------------------- |
+| macOS        | Apple Silicon (M1/M2/M3/M4)  | `aurogen-x.x.x-macos-arm64.tar.gz`  |
+| Linux        | ARM64                         | `aurogen-x.x.x-linux-arm64.tar.gz`  |
+| Linux        | x86_64                        | `aurogen-x.x.x-linux-x64.tar.gz`    |
+| Windows      | x64                           | `aurogen-x.x.x-windows-x64.zip`     |
+
+**macOS / Linux**
+
+```text
+tar -xzf aurogen-x.x.x-<platform>.tar.gz
+cd aurogen-x.x.x-<platform>
+bash start.sh
+```
+
+**Windows**
+
+Extract the package and double-click `start.bat`.
+
+Then open `http://localhost:8000` in your browser. Complete all setup in the web UI.
+
+### 2. Docker installation
+
+Build the image:
+
+```text
+docker build -t aurogen .
+```
+
+Run Aurogen and persist the workspace:
+
+```text
+docker run --rm -p 8000:8000 \
+  -v "$(pwd)/aurogen/.workspace:/app/aurogen/.workspace" \
+  aurogen
+```
+
+Then visit `http://localhost:8000`.
+
+### Docker Compose
+
+Run this command in the project root:
+
+```text
+docker compose up -d --build
+```
+
+### 3. Development deployment
+
+**Prerequisites:** [<u>conda</u>](https://docs.conda.io/) (or another Python environment manager) and [<u>Node.js</u>](https://nodejs.org/).
+
+Run these commands in the project root.
+
+**1. Start the backend**
+
+```text
+# Create environment
+conda create -n aurogen python=3.12
+
+# Install dependencies
+conda activate aurogen && cd ./aurogen && pip install -r requirements.txt
+
+# Start service
+uvicorn app.app:app --host 0.0.0.0 --port 8000 --reload
+```
+
+**2. Start the frontend**
+
+```text
+cd ./aurogen_web && npm i
+npm run dev
+```

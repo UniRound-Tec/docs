@@ -13,14 +13,14 @@
       {
         "language": "zh",
         "pages": [
-          "file",
+          "overview-zh",
           {
             "group": "快速开始",
             "expanded": true,
             "pages": [
-              "file-1",
-              "file-2",
-              "file-3"
+              "installation-zh",
+              "quick-setup-zh",
+              "start-chat-zh"
             ]
           }
         ]
@@ -28,10 +28,15 @@
       {
         "language": "en",
         "pages": [
-          "Overview",
+          "overview",
           {
-            "group": "quick-start",
-            "pages": []
+            "group": "Quick start",
+            "expanded": true,
+            "pages": [
+              "installation",
+              "quick-setup",
+              "start-chat"
+            ]
           }
         ]
       }
