@@ -23,13 +23,13 @@
       {
         "language": "zh",
         "pages": [
+          "file",
           {
             "group": "快速开始",
             "pages": [
               "file-1"
             ]
-          },
-          "file"
+          }
         ]
       }
     ]
