@@ -1,5 +1,43 @@
 ---
-title: "概览"
+title: "🍊 概览"
 ---
 
-## 什么是
+下载 - 安装 - 一键启动，相信我试试吧！
+
+## 什么是Aurogen:\>?
+
+> 开源社区已经有相当多的 OpenClaw 替代品，有的使用更快的编程语言重构整套系统，有的更方便用户部署，但也或多或少地减少了功能，或让二次开发对初级开发者较为困难。作为 AI 深度使用者，在尝试了大部分替代品后，我们根据更真实的痛点和需求，完全重新实现了类 OpenClaw 系统，并使其具有以下特性。
+
+**🗂️ 完全模组化** — Aurogen 将 OpenClaw 中 **Agent、Channel、Provider、Skills 等**概念完全模组化 / 实例化 / 并行化，使其可以完全由你自由组合编排。这意味着在 Aurogen 中你可以**部署一次养很多只龙虾**，这也是 _More OpenClaws_ 的含义。
+
+**💡 轻松配置** — Aurogen 完全舍弃了 CLI 交互和配置文件。安装完成后，打开网页 → 设置密码 → 配置第一个 Provider，即可在 Web Channel 开始使用。由于所有模组都是动态加载，任何设置**无需重启、直接生效**！
+
+**🦀 生态兼容** — Aurogen 完全兼容 OpenClaw 生态，你可以在 [<u>clawhub.ai</u>](http://clawhub.ai) 下载任意 Skills 并导入到 Aurogen 中。内置的公共 Skills 也自带 ClaWHub 技能集成。
+
+## 架构
+
+<Frame>
+  ![Image](/images/image.png)
+</Frame>
+
+很难靠一张图讲清楚，Aurogen的架构\
+简单来说，Aurogen在OpenClaw的Agent的核心框架下，将\
+providers、agents、channels、skills等等核心概念，**完全解耦**
+
+这意味着，你可以**自由编排组合，**这听起来或许有些云里雾里。简单来说：\
+你可以在该架构下配置多个类OpenClaw智能体，每个智能体**有独立的工作空间**，你也可以为每个智能体设置不同的Skills、人设（SOUL.md）、它们也都有自己**独立的记忆。**当然，这些都不需要你操心，你只管创建即可。
+
+还有当前已经实现的一些小的特性：
+
+- **完全兼容ClawHub**：除了Agent本身自带ClawHub之外，有skills管理面板，可以将在ClawHub上下载的skill压缩包直接传入系统，可以根据Agent_Name分类管理。
+- **更优雅的上下文和记忆机制：**省Tokens。
+- **一键启动：**嵌入式Python和Node，一键启动不污染环境。
+- **较为轻量级：**python+vite（静态构建）可以在2h2g的linux开发板中运行。
+
+<Note>
+  Pico/Zero Claw/NanoBot也是优秀的软件，推荐尝试，我们在一些工具的实现上参考了NanoBot
+</Note>
+
+<Warning>
+  还有些新的特性正在完善
+</Warning>
