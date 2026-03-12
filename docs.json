@@ -22,14 +22,15 @@
       },
       {
         "language": "zh",
-        "groups": [
+        "pages": [
           {
             "group": "快速开始",
             "pages": [
               "es/index",
               "es/quickstart"
             ]
-          }
+          },
+          "file"
         ]
       }
     ]
@@ -39,12 +40,7 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    "links": []
   },
   "contextual": {
     "options": [
