@@ -2,6 +2,56 @@
 title: "配置概览"
 ---
 
-### **1.** 什么是Brains
+### 什么是Brains？
 
-**Brains**驱动 Agent 推理与生成的模型/能力配置集合，包括模型类型、API 接入参数、上下文窗口与思考级别等。
+**Brains** 是 Aurogen 中用于定义智能体推理与生成能力的一组模型配置。它集中管理大语言模型调用所需的关键要素，例如模型类型、Provider 接入方式、API 参数、上下文容量以及是否启用更高强度的思考能力。作为智能体的“思维中枢”，Brains 决定了智能体如何理解输入、组织上下文并生成响应。借助 Aurogen 的全 Web 配置界面，用户可以为不同智能体灵活选择合适的Brain，让同一套系统在轻量问答、通用协作和复杂推理等不同任务之间快速切换。
+
+### 配置流程：
+
+点击左侧Brains进入Brains配置界面，在配置界面点击右上角添加新Brain，进入Brain详情配置页。
+
+<Frame>
+  ![Image](/images/image-12.png)
+</Frame>
+
+选择Provider对应的接入方式
+
+<Frame>
+  ![Image](/images/image-17.png)
+</Frame>
+
+定义该Brain唯一内部引用名（不可重名）和描述（可选）
+
+<Frame>
+  ![Image](/images/image-18.png)
+</Frame>
+
+输入所调用的模型名，设置上下文容量以及思考能力。
+
+<Frame>
+  ![Image](/images/image-19.png)
+</Frame>
+
+最后设置api调用，完成后点击添加。
+
+<Frame>
+  ![Image](/images/image-21.png)
+</Frame>
+
+点击测试发起一次 API 连通性测试。系统会根据当前填写的设置向对应模型服务发送测试请求；若配置正确，页面下方会显示成功提示，说明该 Brain 已能够正常完成模型调用。若测试失败，则需要检查 API Key、接口地址、模型名称以及网络连接是否填写正确。
+
+<Frame>
+  ![Image](/images/image-24.png)
+</Frame>
+
+点击编辑可进行对应Brain配置修改。
+
+<Frame>
+  ![Image](/images/image-25.png)
+</Frame>
+
+完成修改后点击保存即可退出编辑页
+
+<Frame>
+  ![Image](/images/image-26.png)
+</Frame>

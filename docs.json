@@ -28,6 +28,12 @@
             "pages": [
               "untitled-page"
             ]
+          },
+          {
+            "group": "Claws 配置",
+            "pages": [
+              "file"
+            ]
           }
         ]
       },
