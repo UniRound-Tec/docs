@@ -40,10 +40,10 @@
             "pages": [
               "channel_overview",
               "channel_feishu",
-              "email",
-              "qq",
-              "dingtalk",
-              "telegram"
+              "channel_email",
+              "channnel_qq",
+              "channel_dingtalk",
+              "channel_telegram"
             ]
           }
         ]
