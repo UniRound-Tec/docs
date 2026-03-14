@@ -38,7 +38,7 @@
           {
             "group": "Channels 配置",
             "pages": [
-              "file"
+              "channel_overview"
             ]
           }
         ]
