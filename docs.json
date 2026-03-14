@@ -45,6 +45,12 @@
               "channel_dingtalk",
               "channel_telegram"
             ]
+          },
+          {
+            "group": "Skills 包管理",
+            "pages": [
+              "skills-setting"
+            ]
           }
         ]
       },
