@@ -42,6 +42,7 @@
               "channel_feishu",
               "email",
               "qq",
+              "dingtalk",
               "telegram"
             ]
           }
