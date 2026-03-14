@@ -3,3 +3,63 @@ title: "钉钉"
 ---
 
 使用钉钉 Channel，你可以将 Aurogen 智能体接入钉钉机器人，使用户能够在钉钉中直接发送消息，并接收智能体返回的回复。
+
+登录[开发者后台](https://open-dev.dingtalk.com/?hash=%23%2F#/)
+
+在**应用开发**下，点击**立即创建**，可一键创建Claw机器人。
+
+<Frame>
+  ![2e2afc9a 199d 4763 Ac46 8df7e6038b9d](/images/2e2afc9a-199d-4763-ac46-8df7e6038b9d.png)
+</Frame>
+
+在创建OpenClaw界面，填写机器人基本信息（包括机器人名称、机器人简介和机器人图标），也可直接使用默认的机器人信息，直接点击确定即可。
+
+<Frame>
+  ![4d01b114 1d6a 4ed4 8699 14d691ed8910](/images/4d01b114-1d6a-4ed4-8699-14d691ed8910.png)
+</Frame>
+
+Claw创建成功后，会自动展示应用的Client ID和Client Secret，请保存好Client ID和Client Secret用于后续使用。
+
+<Frame>
+  ![F3eb7bf0 63ff 4e81 Aafc 196251d49edb](/images/f3eb7bf0-63ff-4e81-aafc-196251d49edb.png)
+</Frame>
+
+当OpenClaw创建成功后，会自动创建一个应用，如下图所示：
+
+<Frame>
+  ![B786be8160ce8db31891dc9b2fdb27e7](/images/b786be8160ce8db31891dc9b2fdb27e7.png)
+</Frame>
+
+在应用的**凭证与基础信息**中，也可以获取到应用的**Client ID**和**Client Secret**，如下图示：
+
+<Frame>
+  ![8bbfca598b926c9587c6d1e5c7284ee5](/images/8bbfca598b926c9587c6d1e5c7284ee5.png)
+</Frame>
+
+进入 **Aurogen Web** 的 **Channels** 页面，点击右上角“添加 Channel”。
+
+<Frame>
+  ![Image](/images/image-123.png)
+</Frame>
+
+选择类型为dingtalk，并填写该 Channel 的唯一标识名称。该名称不可重复。
+
+<Frame>
+  ![Image](/images/image-124.png)
+</Frame>
+
+选择该 Channel 对应的 Claw，并填写描述信息。
+
+<Frame>
+  ![Image](/images/image-125.png)
+</Frame>
+
+在钉钉开发者平台的获取 Client ID和Client Secret，并将其填写到对应的 Channel 配置项中。填写完成后，点击添加，即可完成 Channel 创建。
+
+<Frame>
+  ![Image](/images/image-126.png)
+</Frame>
+
+### 测试
+
+在 Telegram 中搜索已创建的机器人名称，并开始对话。
