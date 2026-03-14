@@ -40,7 +40,8 @@
             "pages": [
               "channel_overview",
               "channel_feishu",
-              "email"
+              "email",
+              "qq"
             ]
           }
         ]
