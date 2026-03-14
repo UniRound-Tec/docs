@@ -37,7 +37,9 @@
           },
           {
             "group": "Channels 配置",
-            "pages": []
+            "pages": [
+              "file"
+            ]
           }
         ]
       },
