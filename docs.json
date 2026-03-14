@@ -39,7 +39,8 @@
             "group": "Channels 配置",
             "pages": [
               "channel_overview",
-              "channel_feishu"
+              "channel_feishu",
+              "untitled-page"
             ]
           }
         ]
