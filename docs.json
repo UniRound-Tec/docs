@@ -34,6 +34,12 @@
             "pages": [
               "Claw_setting"
             ]
+          },
+          {
+            "group": "Channels 配置",
+            "pages": [
+              "Channel_setting"
+            ]
           }
         ]
       },
