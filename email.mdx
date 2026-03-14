@@ -4,75 +4,66 @@ title: "邮箱"
 
 ### 创建邮箱 Channel
 
-以配置QQ邮箱为例，进入QQ邮箱，点击"设置"
+以 QQ 邮箱为例，登录 QQ 邮箱后，点击“设置”。
 
 <Frame>
   ![Image](/images/image-85.png)
 </Frame>
 
-进入账号与安全
+进入“账号与安全”页面。
 
 <Frame>
   ![Image](/images/image-86.png)
 </Frame>
 
-进入”安全设置“页面点击”开启服务“
+进入“安全设置”页面，点击“开启服务”。
 
 <Frame>
   ![Image](/images/image-87.png)
 </Frame>
 
-完成安全验证
+按照页面提示完成安全验证。
 
 <Frame>
   ![Image](/images/image-88.png)
 </Frame>
 
-复制授权码，备注授权码用途
+生成授权码后，复制并妥善保存，同时填写授权码用途备注。
 
 <Frame>
   ![Image](/images/image-89.png)
 </Frame>
 
-进入Aurogen_web Channels页，点击右上角添加Channel。
+进入 Aurogen Web 的 Channels 页面，点击右上角“添加 Channel”。
 
 <Frame>
   ![07e0c7335107f462563087ad0a4239fc](/images/07e0c7335107f462563087ad0a4239fc.png)
 </Frame>
 
-选择类型为email，填写该 Channel 的唯一标识名称（不可重复）。
+选择类型为 email ，并填写该 Channel 的唯一标识名称。该名称不可重复。
 
 <Frame>
   ![Image](/images/image-83.png)
 </Frame>
 
-选择Channel对应的Claw并输入描述文字。
+选择该 Channel 对应的 Claw，并填写描述信息。
 
 <Frame>
   ![Image](/images/image-84.png)
 </Frame>
 
-填写email 设置，以QQ邮箱为例。
+填写 email 配置项。以 QQ 邮箱为例：\
+`imap_host`：`imap.qq.com`\
+`imap_port`：`993`\
+`imap_username`：你的 QQ 邮箱完整地址，例如 `XXX@qq.com`\
+`imap_password`：生成的授权码\
+`smtp_host`：`smtp.qq.com`\
+`smtp_port`：`465`\
+`smtp_username`：你的 QQ 邮箱完整地址，例如 `XXX@qq.com`\
+`smtp_password`：生成的授权码\
+`consent_granted`：`true`
 
-imap_host: imap.qq.com
-
-imap_port: 993
-
-imap_username: 你的QQ邮箱的完整邮件地址如 [XXX@qq.com](mailto:XXX@qq.com)
-
-imap_password: 生成的授权码
-
-smtp_host: smtp.qq.com
-
-smtp_port: 465
-
-smtp_username: 你的QQ邮箱的完整邮件地址如 [XXX@qq.com](mailto:XXX@qq.com)
-
-smtp_password: 生成的授权码
-
-consent_granted: true
-
-点击”添加“完成email channel配置
+填写完成后，点击“添加”，即可完成 email Channel 配置。
 
 <Frame>
   ![Image](/images/image-90.png)
