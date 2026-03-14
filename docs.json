@@ -37,9 +37,7 @@
           },
           {
             "group": "Channels 配置",
-            "pages": [
-              "Channel_setting"
-            ]
+            "pages": []
           }
         ]
       },
